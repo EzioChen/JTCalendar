@@ -31,6 +31,8 @@
     _zeroPaddedDayFormat = YES;
     _weekModeEnabled = NO;
     _pageViewWeekModeNumberOfWeeks = 1;
+    _weekDays = [NSMutableArray new];
+    [_weekDays setArray:@[@"一",@"二",@"三",@"四",@"五",@"六",@"日"]];
 }
 
 @end

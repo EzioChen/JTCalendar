@@ -1,1 +1,5 @@
-../../../../../JTCalendar/Managers/JTCalendarDelegateManager.h
+//
+//  JTCalendarDelegateManager.h
+//  JTCalendar
+//
+//  Creat

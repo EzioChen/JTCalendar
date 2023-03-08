@@ -16,6 +16,7 @@
 - (NSDate *)date;
 - (void)setDate:(NSDate *)date;
 
+- (void)setFatherView:(UIView *)father;
 - (BOOL)isFromAnotherMonth;
 - (void)setIsFromAnotherMonth:(BOOL)isFromAnotherMonth;
 

@@ -1,1 +1,5 @@
-../../../../../JTCalendar/Views/JTVerticalCalendarView.h
+//
+//  JTVerticalCalendarView.h
+//  JTCalendar
+//
+//  Cr

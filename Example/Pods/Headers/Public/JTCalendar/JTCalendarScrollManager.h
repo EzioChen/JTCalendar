@@ -1,1 +1,5 @@
-../../../../../JTCalendar/Managers/JTCalendarScrollManager.h
+//
+//  JTCalendarScrollManager.h
+//  JTCalendar
+//
+//  Creat

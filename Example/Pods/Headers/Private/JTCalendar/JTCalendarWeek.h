@@ -1,1 +1,5 @@
-../../../../../JTCalendar/Protocols/JTCalendarWeek.h
+//
+//  JTCalendarWeek.h
+//  JTCalendar
+//
+//  Create

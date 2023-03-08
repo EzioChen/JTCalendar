@@ -15,6 +15,8 @@
 
 @property (nonatomic, readonly) NSDate *startDate;
 
+-(NSArray *)getArrays;
+
 /*!
  * Must be call if override the class
  */

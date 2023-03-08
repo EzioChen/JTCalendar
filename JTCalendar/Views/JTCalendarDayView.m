@@ -98,11 +98,11 @@
     
     _circleView.frame = CGRectMake(0, 0, sizeCircle, sizeCircle);
     _circleView.center = CGPointMake(self.frame.size.width / 2., self.frame.size.height / 2.);
-    _circleView.layer.cornerRadius = sizeCircle / 2.;
+    _circleView.layer.cornerRadius = 2;//sizeCircle / 2.;
     
     _dotView.frame = CGRectMake(0, 0, sizeDot, sizeDot);
     _dotView.center = CGPointMake(self.frame.size.width / 2., (self.frame.size.height / 2.) +sizeDot * 2.5);
-    _dotView.layer.cornerRadius = sizeDot / 2.;
+    _dotView.layer.cornerRadius = 2;//sizeDot / 2.;
 }
 
 - (void)setDate:(NSDate *)date
@@ -135,5 +135,6 @@
 {
     return self.manager.settings.zeroPaddedDayFormat ? @"dd" : @"d";
 }
+
 
 @end

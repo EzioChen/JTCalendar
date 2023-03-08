@@ -8,11 +8,11 @@
 #import <UIKit/UIKit.h>
 
 #import "JTCalendarDay.h"
+#import "JTCalendarWeekView.h"
 
 @interface JTCalendarDayView : UIView<JTCalendarDay>
 
 @property (nonatomic, weak) JTCalendarManager *manager;
-
 @property (nonatomic) NSDate *date;
 
 @property (nonatomic, readonly) UIView *circleView;
@@ -24,6 +24,8 @@
 
 @property (nonatomic) BOOL isFromAnotherMonth;
 
+
+@property (nonatomic,weak)UIView *fatherView;
 /*!
  * Must be call if override the class
  */

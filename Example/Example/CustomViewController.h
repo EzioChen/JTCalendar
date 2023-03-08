@@ -16,4 +16,6 @@
 
 @property (strong, nonatomic) JTCalendarManager *calendarManager;
 
+@property(nonatomic,assign)BOOL isWeek;
+
 @end

@@ -28,6 +28,7 @@
 @property (nonatomic, readonly) JTDateHelper * _Nullable dateHelper;
 @property (nonatomic, readonly) JTCalendarSettings * _Nullable settings;
 
+
 // Intern methods
 
 @property (nonatomic, readonly) JTCalendarDelegateManager * _Nullable delegateManager;

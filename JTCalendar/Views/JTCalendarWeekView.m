@@ -48,6 +48,11 @@
     // Maybe used in future
 }
 
+
+-(NSArray *)getArrays{
+    return _daysViews;
+}
+
 - (void)setStartDate:(NSDate *)startDate updateAnotherMonth:(BOOL)enable monthDate:(NSDate *)monthDate
 {
     NSAssert(startDate != nil, @"startDate cannot be nil");
@@ -79,8 +84,8 @@
                 [dayView setIsFromAnotherMonth:YES];
             }
         }
-        
         dayView.date = dayDate;
+        
         dayDate = [_manager.dateHelper addToDate:dayDate days:1];
     }
 }
@@ -93,8 +98,9 @@
         for(int i = 0; i < NUMBER_OF_DAY_BY_WEEK; ++i){
             UIView<JTCalendarDay> *dayView = [_manager.delegateManager buildDayView];
             [_daysViews addObject:dayView];
-            [self addSubview:dayView];
             
+            [dayView setFatherView:self];
+            [self addSubview:dayView];
             dayView.manager = _manager;
         }
     }

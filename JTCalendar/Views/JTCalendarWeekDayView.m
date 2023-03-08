@@ -73,8 +73,13 @@
             break;
         case JTCalendarWeekDayFormatFull:
             days = [[dateFormatter standaloneWeekdaySymbols] mutableCopy];
+            
+            break;
+        case JTCalendarWeekDayFormatCustom:
+            days = [[dateFormatter shortStandaloneWeekdaySymbols] mutableCopy];
             break;
     }
+    
     
     for(NSInteger i = 0; i < days.count; ++i){
         NSString *day = days[i];
@@ -91,6 +96,10 @@
             [days removeObjectAtIndex:0];
             [days addObject:day];
         }
+    }
+    
+    if (_manager.settings.weekDayFormat == JTCalendarWeekDayFormatCustom){
+        days = _manager.settings.weekDays;
     }
     
     for(int i = 0; i < NUMBER_OF_DAY_BY_WEEK; ++i){
